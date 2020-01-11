@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  background: #04070c;
+}
+
+.for-video {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.for-video video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  /* background-color: grey; */
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+.my-pic {
+  width: 150px;
+  border-bottom: 1px solid #e4ffff;
+}
+
+.info p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: antiquewhite;
+  margin-left: 10px;
+  padding-left: 5px;
+  border-left: 2px solid #36fff8;
+}
+
+.small {
+  width: 1.5rem;
+  display: inline-block;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.for-item {
+  background-color: #04070c;
+  color: antiquewhite;
+  font-size: 1.5rem;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  border: 1px solid #e4ffff;
+}
+
+.current {
+  grid-row: span 3;
+  opacity: 1;
+}
+
+.current a {
+  text-decoration: underline;
+}
+
+#first {
+  background-image: url("img/1.jpg");
+}
+
+#second {
+  background-image: url("img/2.jpg");
+}
+
+#third {
+  background-image: url("img/3.jpg");
+}
+
+#fourth {
+  background-image: url("img/4.jpg");
+}
+
+.cover {
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+/* show all but then will be hidden in script */
+.to-hide {
+  display: block;
+}
+
+.for-text {
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.for-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon {
+  width: 60px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info p {
+    font-size: 1rem;
+  }
+
+  .small {
+    width: 1rem;
+  }
+}

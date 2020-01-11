@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My portfolio</title>
+  </head>
+  <body>
+    <div class="for-video">
+      <video id="theVideo" autoplay loop muted poster="img/back.jpg">
+        <source id="numOne" type="video/mp4" />
+        <source id="numTwo" type="video/webm" />
+      </video>
+    </div>
+    <div class="container">
+      <section class="info">
+        <img class="my-pic" src="img/me.png" alt="picture of me" />
+
+        <p>
+          Здравствуйте, меня зовут Наиль и я frontend разработчик. Ниже собраны
+          некоторые из моих работ. Если они вам нравятся, свяжитесь со мной.
+          <br /><img
+            class="small"
+            src="img/phone.png"
+          />&nbsp;+77088531675&nbsp;&nbsp;
+          <img class="small" src="img/mail.png" />&nbsp;nail.ableyev@gmail.com
+        </p>
+      </section>
+      <section class="grid">
+        <div class="for-item current" id="first">
+          <div class="cover">
+            <a href="https://nailteach.kz/"><h3>Персональный сайт</h3></a>
+
+            <div id="initial" class="to-hide">
+              <p class="for-text">
+                Web сайт, в котором собраны одностраничные приложения, созданные
+                для преподавателей английского языка. Это простой, быстрый
+                легкий сайт без зависимостей и со 100 баллами за
+                производительность в Lighthouse.
+              </p>
+              <div class="for-icons">
+                <img class="icon" src="img/speed.png" />
+                <img class="icon" src="img/pwa.png" />
+                <img class="icon" src="img/vanilla.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="for-item" id="second">
+          <div class="cover">
+            <a href="https://nailteach.kz/CURRENT/"
+              ><h3>Прогрессивное Веб Приложение</h3></a
+            >
+            <div class="to-hide">
+              <p class="for-text">
+                Сокращенная версия приложения созданного для моих учеников. С
+                зависимостями от старого доброго Jquery до небольших утилитарных
+                библиотек.
+              </p>
+              <div class="for-icons">
+                <img class="icon" src="img/pwa.png" />
+                <img class="icon" src="img/grid.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="for-item" id="third">
+          <div class="cover">
+            <a href="https://github.com/Nail-Ableyev/Project5"
+              ><h3>Проектная работа</h3></a
+            >
+            <div class="to-hide">
+              <p class="for-text">
+                Эта проектная работа созданная во время онлайн обучения в
+                Udacity на nanodegree программе Frontend веб разработчика. В
+                данном приложении использованы несколько API и библиотек, в том
+                числе и Google Map API.
+              </p>
+              <div class="for-icons">
+                <img class="icon" src="img/udacity.png" />
+                <img class="icon" src="img/map.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="for-item" id="fourth">
+          <div class="cover">
+            <a href="http://nailteach.kz/DEMO/NUMBTIMER/numbtimer.html"
+              ><h3>Одностраничное приложение</h3></a
+            >
+            <div class="to-hide">
+              <p class="for-text">
+                Один из примеров приложений созданных для преподавателей
+                английского языка. Для открытия меню в приложении нажмите
+                клавишу "L"
+              </p>
+              <div class="for-icons">
+                <img class="icon" src="img/grid.png" />
+                <img class="icon" src="img/vanilla.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
